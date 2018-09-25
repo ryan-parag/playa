@@ -7,6 +7,14 @@ justify {
   }
 }
 
+.u-text--black {
+  color: grey(black) !important;
+}
+
+.u-text--white {
+  color: $white !important;
+}
+
 .u-text--h1 {
   font-size: $h1-size;
 }
