@@ -1,0 +1,109 @@
+// Forms 
+form {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+  background-color: $white;
+  border: 1px solid grey(lightest);
+  border-radius: 0;
+  box-shadow: none;
+  font-family: inherit;
+  width: 100%;
+  font-size: inherit;
+  &:hover {
+    border-color: grey(light);
+  }
+  &:focus {
+    border-color: grey(black);
+    outline: 0;
+  }
+}
+
+// Removes awkward default styles on some inputs for iOS
+input {
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  &[type="text"],
+  &[type="tel"],
+  &[type="url"],
+  &[type="password"] {
+    appearance: none;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: $white;
+    border-radius: 0px;
+    border: 1px solid grey(lightest);
+    box-shadow: none;
+    box-sizing: border-box;
+    height: 38px;
+    padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    &:hover {
+      border-color: grey(light);
+    }
+    &:focus {
+      border-color: grey(black);
+      outline: 0;
+    }
+  }
+}
+
+.field {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+textarea {
+  appearance: none;
+  min-height: 65px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+label,
+legend {
+  display: block;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input {
+  &[type="checkbox"],
+  &[type="radio"] {
+    display: inline;
+  }
+}
+
+.form-radio,
+.form-check {
+  label {
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: 400;
+  }
+}
+
+small {
+  color: grey(light);
+}
+
+hr {
+  border-top: 1px solid grey(lightest);
+  margin: 2rem auto;
+}

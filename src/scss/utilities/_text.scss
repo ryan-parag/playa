@@ -1,0 +1,85 @@
+@each $text-align in right,
+left,
+center,
+justify {
+  .u-text--#{$text-align} {
+    text-align: #{$text-align};
+  }
+}
+
+.u-text--h1 {
+  font-size: $h1-size;
+}
+
+.u-text--h2 {
+  font-size: $h2-size;
+}
+
+.u-text--h3 {
+  font-size: $h3-size;
+}
+
+.u-text--h4 {
+  font-size: $h4-size;
+}
+
+.u-text--h5 {
+  font-size: $h4-size;
+}
+
+.u-text--h6 {
+  font-size: $h5-size;
+}
+
+.u-text--font-reset {
+  font-family: inherit
+}
+
+.u-text--decoration-none {
+  text-decoration: none
+}
+
+.u-text--bold {
+  font-weight: 700;
+}
+
+.u-text--regular {
+  font-weight: 400;
+}
+
+.u-text--italic {
+  font-style: italic
+}
+
+.u-text--uppercase {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.u-text--nowrap {
+  white-space: nowrap
+}
+
+.u-text--break-word {
+  word-wrap: break-word
+}
+
+.u-list--style-none {
+  list-style: none
+}
+
+.u-text--underline {
+  text-decoration: underline
+}
+
+.u-text--truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.u-list--reset {
+  list-style: none;
+  padding-left: 0;
+}

@@ -1,0 +1,54 @@
+// Tables
+table {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0;
+  background-color: transparent;
+  thead {
+    vertical-align: bottom;
+    border-bottom: 1px solid grey(lightest);
+  }
+  th,
+  td {
+    text-align: inherit;
+    padding: .75rem;
+  }
+  th {
+    font-weight: 700;
+  }
+  tr:first-child {
+    text-align: left;
+  }
+  th,
+  td {
+    text-align: center;
+  }
+  tr.is-selected {
+    border: 1px solid grey(black);
+    background: grey(darkest);
+  } // modifiers
+  &.table--striped tbody tr:nth-of-type(even) {
+    background: lighten(grey(lightest), 12%);
+  }
+  &.table--dark {
+    background-color: grey(darkest);
+    color: white;
+    thead {
+      border-color: grey(dark);
+    }
+    &.table--striped tbody tr:nth-of-type(even) {
+      background: darken(grey(dark), 12%);
+    }
+  }
+  &.table--hover {
+    tbody:hover tr:not(:hover) > * {
+      opacity: .4;
+    }
+  }
+}
+
+.table--megazord {
+  @extend .table--dark;
+  @extend .table--striped;
+  @extend.table--hover; //	Add any other modifiers to create the ultimate megazord
+}

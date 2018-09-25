@@ -1,0 +1,47 @@
+// Lists
+
+ul {
+  list-style: disc inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 2rem;
+  font-size: 90%;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding-right: .2rem;
+  padding-left: .2rem;
+  margin-bottom: .5rem;
+}
+
+dl {
+	margin: 1.5rem 0;
+	dt {
+		font-weight: 700;
+	}
+	dd {
+		padding-left: 1rem;
+		&:not(:last-of-type) {
+			margin-bottom: 1rem;
+		}
+	}
+}

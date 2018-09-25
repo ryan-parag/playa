@@ -12,36 +12,34 @@ h1,h2,h3,h4,h5,h6, .text--title{
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: $h1-size;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: $h2-size;
 }
 
 h3 {
-  font-size: 1.375em;
+  font-size: $h3-size;
 }
 
 h4 {
-  font-size: 1.125em;
+  font-size: $h4-size;
 }
 
 h5 {
-  font-size: 1em;
+  font-size: $h5-size;
 }
 
 h6 {
-  font-size: 0.875em;
+  font-size: $h6-size;
 }
 
 p {
-  font-size: 1.125em;
+  font-size: 1em;
   font-weight: 400;
   opacity: .75;
-  &:not(:last-of-type) {
-    margin-bottom: 1rem;
-  }
+  margin-bottom: 1rem;
 }
 
 button, input {
