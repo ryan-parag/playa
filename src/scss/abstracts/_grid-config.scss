@@ -1,0 +1,14 @@
+// Grid Config
+
+// this is the fixed gutter between columns
+$maxWidth: 			60em !default;
+
+// Grid check
+$gridDebug:			false !default;
+
+// Grid settings
+$width: 96%;
+$gutter: 4% !default;
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px

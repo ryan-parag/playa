@@ -1,0 +1,17 @@
+$grey: (
+  black: #1e272e,
+  darkest: rgba(34, 47, 62, 1.0),
+  dark: rgba(87, 101, 116, 1.0),
+  light: rgba(131, 149, 167, 1.0),
+  lightest: rgba(200, 214, 229, 1.0)
+);
+
+@function grey($x:base) {
+  @return map-get($grey, $x);
+}
+
+@function gray($x:base) {
+  @return map-get($grey, $x);
+}
+
+$white: #ffffff;

@@ -1,0 +1,28 @@
+// Base
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; // Makes 1rem = 10px
+}
+
+*,*::before, *::after {
+	box-sizing: inherit;
+}
+
+html, body {
+	width: 100%;
+	height:100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+  background: $white;
+  color: grey(black);
+}
+
+body[dark="true"] {
+  background: grey(black);
+  color: $white;
+  background: linear-gradient(-225deg, grey(darkest) 0%, grey(black) 100%);
+}

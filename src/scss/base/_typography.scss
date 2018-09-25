@@ -1,0 +1,84 @@
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  font-size: $font-size;
+}
+
+h1,h2,h3,h4,h5,h6, .text--title{
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.375em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.875em;
+}
+
+p {
+  font-size: 1.125em;
+  font-weight: 400;
+  opacity: .75;
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+}
+
+button, input {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: grey(darkest);
+}
+
+strong {
+  font-weight: 700;
+}
+
+small,
+sub,
+sup {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+blockquote {
+  margin: 0 0 2rem 1rem;
+  border-left: 2px solid grey(darkest);
+  padding: 2rem 1rem;
+  color: grey(darkest);
+}
+
+caption,
+figcaption {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+em,
+cite,
+i {
+  font-style: italic;
+}
